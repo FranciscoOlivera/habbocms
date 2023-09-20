@@ -1,0 +1,38 @@
+RewriteEngine On
+
+
+# Quickregister Rules
+ErrorDocument 400 /error.php
+ErrorDocument 401 /error.php
+ErrorDocument 403 /error.php
+ErrorDocument 404 /error.php
+ErrorDocument 500 /error.php
+
+RewriteRule ^index(|/)$ ./index.php
+RewriteRule ^logout(|/)$ ./logout.php
+RewriteRule ^settings(|/)$ ./settings.php
+RewriteRule ^settings/(..*)$ ./settings.php?accion=$1
+RewriteRule ^news(|/)$ ./news.php
+RewriteRule ^news/(..*)$ ./news.php?id=$1
+RewriteRule ^banned(|/)$ ./banned.php
+RewriteRule ^client(|/)$ ./client.php
+RewriteRule ^noflash(|/)$ ./noflash.php
+RewriteRule ^mantenimiento(|/)$ ./mantenimiento.php
+RewriteRule ^me(|/)$ ./me.php
+RewriteRule ^home(|/)$ ./home.php
+RewriteRule ^home/(..*)$ ./home.php?id=$1
+RewriteRule ^team/(..*)$ ./team.php?id=$1
+RewriteRule ^refer/(..*)$ ./refer.php?r=$1
+RewriteRule ^register(|/)$ ./register.php
+RewriteRule ^shop(|/)$ ./shop.php
+RewriteRule ^team(|/)$ ./team.php
+RewriteRule ^photos(|/)$ ./photos.php
+RewriteRule ^community(|/)$ ./community.php
+RewriteRule ^habbo-imaging/badge/(.*) habbo-imaging/badge.php?badge=$1
+RewriteRule ^habbo-imaging/head/([^/]+) /habbo-imaging/head.php?figure=$1
+
+RewriteRule ^upload$ upload_photo.php
+RewriteRule ^preview/([0-9]+)-([0-9]+).png public/preview/$1-$2.png
+RewriteRule ^purchased/([0-9]+)-([0-9]+).png fetch_photo.php?userId=$1&photoId=$2&tmb=0
+RewriteRule ^purchased/([0-9]+)-([0-9]+)_small.png fetch_photo.php?userId=$1&photoId=$2&tmb=1
+RewriteRule ^crossdomain.xml$ crossdomain.xml

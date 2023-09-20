@@ -1,0 +1,234 @@
+/*
+Coded by Totix
+*/
+
+@font-face {
+font-family: 'Ubuntu Light';
+src: url('../bootstrap/fonts/Ubuntu-L.ttf') format("truetype");
+}
+body {
+	background: url('../app/images/hotelview_banzai.png') right top no-repeat, url('../app/images/bg.png');
+	background-attachment: fixed;
+	font-family: 'Ubuntu Light';
+}
+/* NUEVO CSS
+---------------------------------------------------- */
+#loadPage {
+	display: block;
+	background: url('../app/images/bgloader.png');
+	color: white;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+#loadPage img {
+	font-size: 30px;
+	margin-top: 18%;
+}
+.cssload-whirlpool,
+.cssload-whirlpool::before,
+.cssload-whirlpool::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border: 2px solid rgb(204,204,204);
+	border-left-color: rgb(0,0,0);
+	border-radius: 1499px;
+		-o-border-radius: 1499px;
+		-ms-border-radius: 1499px;
+		-webkit-border-radius: 1499px;
+		-moz-border-radius: 1499px;
+}
+
+.cssload-whirlpool {
+	margin: -38px 0 0 -38px;
+	height: 75px;
+	width: 75px;
+	animation: cssload-rotate 1900ms linear infinite;
+		-o-animation: cssload-rotate 1900ms linear infinite;
+		-ms-animation: cssload-rotate 1900ms linear infinite;
+		-webkit-animation: cssload-rotate 1900ms linear infinite;
+		-moz-animation: cssload-rotate 1900ms linear infinite;
+}
+
+.cssload-whirlpool::before {
+	content: "";
+	margin: -35px 0 0 -35px;
+	height: 66px;
+	width: 66px;
+	animation: cssload-rotate 1900ms linear infinite;
+		-o-animation: cssload-rotate 1900ms linear infinite;
+		-ms-animation: cssload-rotate 1900ms linear infinite;
+		-webkit-animation: cssload-rotate 1900ms linear infinite;
+		-moz-animation: cssload-rotate 1900ms linear infinite;
+}
+
+.cssload-whirlpool::after {
+	content: "";
+	margin: -44px 0 0 -44px;
+	height: 84px;
+	width: 84px;
+	animation: cssload-rotate 3800ms linear infinite;
+		-o-animation: cssload-rotate 3800ms linear infinite;
+		-ms-animation: cssload-rotate 3800ms linear infinite;
+		-webkit-animation: cssload-rotate 3800ms linear infinite;
+		-moz-animation: cssload-rotate 3800ms linear infinite;
+}
+.largo {
+	height: 180px;
+}
+.largo .logo {
+	margin-top: 1%;
+	float: left;
+}
+.largo .onlines {
+	margin-top: 7%;
+	float: right;
+}
+.btn {
+    text-transform: uppercase;
+    border: none;
+    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    position: relative;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: #2196f3;
+    border-color: transparent;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+button {
+    -webkit-appearance: button;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image: -webkit-radial-gradient(circle, #000000 10%, transparent 10.01%);
+    background-image: -o-radial-gradient(circle, #000000 10%, transparent 10.01%);
+    background-image: radial-gradient(circle, #000000 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    -webkit-background-size: 1000% 1000%;
+    background-size: 1000% 1000%;
+    background-position: 50%;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: background .5s, opacity 1s;
+    -o-transition: background .5s, opacity 1s;
+    transition: background .5s, opacity 1s;
+}
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+@keyframes cssload-rotate {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes cssload-rotate {
+	100% {
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-rotate {
+	100% {
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-rotate {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cssload-rotate {
+	100% {
+		-moz-transform: rotate(360deg);
+	}
+}
+#footer {
+  background-color: rgb(37,37,37);
+  background-image: url(http://i.imgur.com/Z1ipA1s.png);
+  border-top: 4px solid rgba(0,0,0,0.2);
+  padding: 50px 0;
+  color: #FFF;
+  margin: 50px 0 0 0;
+}
+
+#footer .copyright {
+  font-weight: 800;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.footer-links li {
+  float: left;
+  margin: 0 15px 0 0;
+  padding: 0;
+}
+
+.footer-links li:last-child {
+  margin: 0;
+}
+
+.footer-links li a {
+  color: #FFF;
+  font-weight: 800;
+}
+
+.footer-links li a:hover {
+  border-bottom: 2px solid rgb(36,130,190);
+}
+
+.footer-links li:nth-child(2) a:hover {
+  border-bottom: 2px solid rgb(119,199,233);
+}
+
+.footer-links li:nth-child(3) a:hover {
+  border-bottom: 2px solid rgb(184,36,190);
+}
